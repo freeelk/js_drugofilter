@@ -1,0 +1,245 @@
+body {
+    background-color: #999999;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#main-container {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+}
+
+#container {
+    background-color: #FFFFFF;
+    position: absolute;
+    width: 623px;
+    height: 440px;
+    border-radius: 10px;
+}
+
+#logo {
+    position: relative;
+    top: -250px;
+}
+
+#header {
+    background-color: #FF8663;
+    height: 46px;
+    color: #FFFFFF;
+    font-size: 130%;
+    line-height: 46px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#header #header-text {
+    padding-left: 14px;
+    float: left;
+}
+
+#header #header-icon {
+    float: right;
+    padding-right: 14px;
+    line-height: 46px;
+}
+
+#inputs-panel {
+    background-color: #EEEEEE;
+    height: 46px;
+    line-height: 46px;
+}
+
+#inputs-panel  .inner {
+
+}
+
+#inputs-panel  .inner-left  {
+    width: 286px;
+    float: left;
+    margin-left: 14px;
+}
+
+#inputs-panel  .inner-right  {
+    width: 286px;
+    float: right;
+    margin-right: 14px;
+}
+
+#inputs-panel .friend-input {
+    box-sizing: border-box;
+    width: 100%;
+    height: 27px;
+    padding-left: 28px;
+    padding-right: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    background-image: url("../images/looking-glass.png");
+    background-repeat: no-repeat;
+    background-position: 5px 50%;
+}
+
+#friend-common-input {
+
+}
+
+#friend-selected-input {
+
+}
+
+#content {
+    position: relative;
+    height: 302px;
+}
+
+#content .content-panel {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 14px;
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+}
+
+#left-panel {
+    border-right: 1px #EEEEEE solid;
+}
+
+#right-panel {
+    margin-left: 50%;
+}
+
+.list-container {
+    padding: 14px;
+}
+
+#left-list-container {
+    border-right: 1px #EEEEEE solid;
+}
+
+
+#right-panel {
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+
+.content-panel-text {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px #EEEEEE solid;
+}
+
+.friends-list-container {
+    position: relative;
+    height: 250px;
+    overflow-y: scroll;
+}
+
+.friends-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+}
+
+.friends-list li {
+    width: 100%;
+    height: 66px;
+    //line-height: 66px;
+    position: relative;
+}
+
+.friends-list li:hover {
+    background-color: #EEEEEE;
+}
+
+#footer {
+    background-color: #EEEEEE;
+    height: 46px;
+    line-height: 46px;
+    width: 100%;
+    position:absolute;
+    bottom:0;
+    right:0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#footer .inner {
+    float: right;
+    margin-right: 7px;
+}
+
+#save-button {
+    width: 87px;
+    height: 30px;
+    color: #FFFFFF;
+    background-color: #FF8663;
+    border: none;
+    border-radius: 10px;
+}
+
+.friend-photo {
+    position: absolute;
+    margin: auto;
+    left: 3px;
+    top: 0;
+    bottom: 0;
+    max-width: 45px;
+    border-radius: 50%;
+}
+
+.friend-name {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 50%;
+    height: 30%;
+    margin: auto;
+}
+
+
+.move-sign {
+    width: 20px;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    float: right;
+    font-size: 130%;
+    font-weight: bold;
+    margin-right: 10px;
+    color: #BEBEBE;
+}
+
+#left-panel .friends-list .move-sign {
+    background-image: url("../images/add.png");
+}
+
+#right-panel .friends-list .move-sign {
+    background-image: url("../images/remove.png");
+}
+
+.friend-action {
+    float: right;
+    font-size: 130%;
+    font-weight: bold;
+    margin-right: 10px;
+    color: #BEBEBE;
+}
